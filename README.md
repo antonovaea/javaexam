@@ -11,8 +11,8 @@ The exam includes 3 tasks to be done: [Calculator](/tasks/Calculator.md), [Pyram
 
 ### Result ###
 
-* Author name : {Elizaveta Antonova}
-* Travis badge : {https://travis-ci.com/antonovaea/javaexam.svg?branch=master}
+* Author name : Elizaveta Antonova
+* Travis badge : https://travis-ci.com/antonovaea/javaexam.svg?branch=master
 
 ### How to start?  ###
 * Install [GIT](https://git-scm.com/) and [Maven](https://maven.apache.org)
