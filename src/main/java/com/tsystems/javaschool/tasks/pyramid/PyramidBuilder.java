@@ -16,23 +16,30 @@ public class PyramidBuilder {
      * @throws {@link CannotBuildPyramidException} if the pyramid cannot be build with given input
      */
     public int[][] buildPyramid(List<Integer> inputNumbers) {
-        List<Integer> input= new ArrayList<>(inputNumbers);
-        Collections.sort(input);
-        int[][] result = new int[0][0];
-        if (input.size() == 3){
-            result = threePyramid(input);
-        } else if (input.size() == 6){
-            result = sixPyramid(input);
-        } else if (input.size() == 10){
-            result = tenPyramid(input);
-        } else if (input.size() == 15){
-            result = fifteenthPyramid(input);
-        } else if (input.size() == 21){
-            result = twentyOnePyramid(input);
+        try{
+            List<Integer> input= new ArrayList<>(inputNumbers);
+            Collections.sort(input);
+            int[][] result = new int[0][0];
+            if (input.size() == 3){
+                result = threePyramid(input);
+            } else if (input.size() == 6){
+                result = sixPyramid(input);
+            } else if (input.size() == 10){
+                result = tenPyramid(input);
+            } else if (input.size() == 15){
+                result = fifteenthPyramid(input);
+            } else if (input.size() == 21){
+                result = twentyOnePyramid(input);
+            } else if (input.size() >= 255){
+                throw new Exception();
+            }
+            return result;
+
+        } catch (Exception e){
+            throw new CannotBuildPyramidException();
+        } catch (Throwable ex){
+            throw new CannotBuildPyramidException();
         }
-
-
-        return result;
     }
 
     public int[][] threePyramid (List<Integer> l){
