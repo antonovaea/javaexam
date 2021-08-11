@@ -149,18 +149,11 @@ public class PyramidBuilder {
         l.add(19,0);
         l.add(25, 0);
         l.add(26,0);
-
-        System.out.println(l);
         List<Integer> firstRow = l.subList(0, 9);
         List<Integer> secondRow = l.subList(9, 18);
         List<Integer> thirdRow = l.subList(18, 27);
         List<Integer> fourthRow = l.subList(27, 36);
         List<Integer> fifthRow = l.subList(36, 45);
-        System.out.println(firstRow);
-        System.out.println(secondRow);
-        System.out.println(thirdRow);
-        System.out.println(fourthRow);
-        System.out.println(fifthRow);
         int [][] pyramid = new int[5][9];
         for (int i = 0; i < 1; i++){
             for (int j = 0; j < 9; j++){
